@@ -276,7 +276,6 @@ resource "aws_dms_endpoint" "this" {
       row_group_length                  = lookup(s3_settings.value, "row_group_length", null)
       server_side_encryption_kms_key_id = lookup(s3_settings.value, "server_side_encryption_kms_key_id", null)
       service_access_role_arn           = lookup(s3_settings.value, "service_access_role_arn", null)
-      timestamp_column_name             = lookup(s3_settings.value, "timestamp_column_name", null)
       use_csv_no_sup_value              = lookup(s3_settings.value, "use_csv_no_sup_value", null)
     }
   }
